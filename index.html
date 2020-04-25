@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="Hover-master\css\hover-min.css">
+	
   </head>
 <body>
 
@@ -63,46 +65,48 @@
 		<div class="overlay"></div>
 
 		<div class="description">
-		<img src="images/profile.jpg" class="border">	
+		<img src="images/profile.jpg" class="border ">	
+		<div>
   			<h1>Dr. Haider Banka</h1>
   			<p>Associate Professor</p>
   			<p>Department of Computer Science and Engineering</p>
   			<p>Indian Institute of Technology (Indian School of Mines), Dhanbad</p>
   			<p>Jharkhand, India, 826004.</p>
-  			
+  		</div>	
 			<!-- <button class="btn btn-outline-secondary btn-lg">Tell Me More!</button> -->
 		<!--Facebook-->
-        <a class="btn btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook fa-2x spacingButtons  pinkColor"></i></a>
+        <a class="btn btn-lg btn-fb hvr-icon-grow" type="button" role="button"><i class="fab fa-facebook fa-2x spacingButtons  pinkColor hvr-icon"></i></a>
+
         <!--Twitter-->
-        <a class="btn btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter  fa-2x spacingButtons  pinkColor"></i></a>
+        <a class="btn btn-lg btn-tw hvr-icon-grow" type="button" role="button"><i class="fab fa-twitter  fa-2x spacingButtons  pinkColor hvr-icon"></i></a>
 
         <!--Linkedin-->
-        <a class="btn btn-lg btn-li" type="button" role="button"><i class="fab fa-linkedin fa-2x  spacingButtons  pinkColor"></i></a>
-
+        <a class="btn btn-lg btn-li hvr-icon-grow" type="button" role="button"><i class="fab fa-linkedin fa-2x  spacingButtons  pinkColor hvr-icon"></i></a>
 
         <!--Github-->
-        <a class="btn btn-lg btn-git" type="button" role="button"><i class="fab fa-github  fa-2x spacingButtons  pinkColor"></i></a>
+        <a class="btn btn-lg btn-git hvr-icon-grow" type="button" role="button"><i class="fab fa-github  fa-2x spacingButtons  pinkColor hvr-icon"></i></a>
 		</div>
 	</header>
 
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">IIT(ISM) Dhanbad</h3>
+				<h3 class="feature-title ">IIT(ISM) Dhanbad</h3>
 				<a href="https://www.iitism.ac.in/">
-					<img src="images/iit_ism.jpg" class="img-fluid">
+					<img src="images/iit_ism.jpg" class="img-fluid hvr-grow-shadow">
 				</a>
 				<p>	
 Standing tall since early decades of 20th century, the institute is steadily sailing through the millennium change and has emerged into one of the most prominent institution- Indian Institute of Technology IIT(ISM) with full bloom functioning of 18 branches of Engineering, Applied Sciences, Management Studies and Humanities.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">CSE Department</h3>
+				<h3 class="feature-title ">CSE Department</h3>
 				<a href="https://www.iitism.ac.in/dept/cse/dept_cse.php">
-				<img src="images/cse.jpg" class="img-fluid">
+				<img src="images/cse.jpg" class="img-fluid hvr-grow-shadow">
 				</a>
 				<p>The Department of Computer Science and Engineering was set up in the year 1997, following the resounding success of ISM Alumni in the fields of Computer Science and Information Technology. The Department provides an outstanding research environment complemented by superior teaching for its students to flourish in.</p>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">	
+			<div id="collaborate" class="col-lg-4 col-md-4 col-sm-12" >	
+				<!-- 
 				<h3 class="feature-title">Get in Touch!</h3>
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="Name" name="name">
@@ -113,11 +117,24 @@ Standing tall since early decades of 20th century, the institute is steadily sai
 				<div class="form-group">
 					<textarea class="form-control" rows="4"></textarea>
 				</div>
-				<input type="submit" class="btn btn-secondary btn-block" value="Send" name="message">
+				<input type="submit" class="btn btn-secondary btn-block" value="Send" name="message"> -->
+
+				<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd6vQJo7_2Fj0XayZcrwEU4pGLY3YvMGr_2B05fBE6QU_2FviSQ.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
+				<button onclick='thankyou()' class="btn btn-secondary btn-block thankyou " >SUBMIT</button>
+				<!-- <input type="submit" class="btn btn-secondary btn-block" value="SUBMIT"> -->
 			</div>
 		</div> 
 	</div>
-	
+
+
+<!-- 
+	<div id="topNews" class="container features ">
+		
+	</div> -->
+
+
+
+
 	<footer class="page-footer">
 		<div class="container">
 			<div class="col-lg-8 col-md-8 col-sm-12">
@@ -134,13 +151,13 @@ Standing tall since early decades of 20th century, the institute is steadily sai
 				</div>
  -->
 				<div class="col-lg-3 col-md-3 col-sm-12">
-					<p><a href="https://nptel.ac.in/"><img src="images/nptel.jpg"></a></p>
+					<p class="hvr-bounce-in"><a href="https://nptel.ac.in/" ><img src="images/nptel.jpg" ></a></p>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12">
-					<p><a href="https://ocw.mit.edu/index.htm"><img src="images/mitocw.jpg"></a></p>
+					<p class="hvr-bounce-in"><a href="https://ocw.mit.edu/index.htm"><img src="images/mitocw.jpg"></a></p>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12">
-					<p><a href="https://www.coursera.org/"><img src="images/coursera.jpg"></a></p>
+					<p class="hvr-bounce-in"><a href="https://www.coursera.org/" ><img src="images/coursera.jpg"></a></p>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12">
 					<h6 class="text-uppercase font-weight-bold">Contact</h6>
@@ -162,5 +179,9 @@ Standing tall since early decades of 20th century, the institute is steadily sai
 <script src="jquery-3.3.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
+<script src="form.js"></script>
 </body>
+<!-- <script type="text/javascript" src="news.js"></script> -->
 </html>
+
+
